@@ -1,14 +1,22 @@
 {
   "name": "bhin-npm-test-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "exports": {
     ".": {
-      "import": "./src/index.js",
-      "require": "./src/index.cjs"
+      "import": "./dist/index.js",
+      "require": "./src/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "license": "MIT",
-  "scripts": {}
+  "scripts": {
+    "build": "yarn build:tsc",
+    "build:tsc": "yarn tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.2"
+  }
 }
