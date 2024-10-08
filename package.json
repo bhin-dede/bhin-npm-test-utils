@@ -1,6 +1,7 @@
 {
   "name": "bhin-npm-test-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
+  "type": "module",
   "license": "MIT"
 }
