@@ -1,7 +1,14 @@
 {
   "name": "bhin-npm-test-utils",
-  "version": "0.0.3",
-  "main": "index.js",
+  "version": "0.0.5",
   "type": "module",
-  "license": "MIT"
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.cjs"
+    }
+  },
+  "license": "MIT",
+  "scripts": {}
 }
