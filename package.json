@@ -1,6 +1,6 @@
 {
   "name": "bhin-npm-test-utils",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "prepack": "yarn build",
     "build": "yarn build:tsc",
     "build:tsc": "yarn tsc"
   },
